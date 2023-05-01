@@ -1,0 +1,70 @@
+#about {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 80px 15vw 50px 15vw;
+  box-sizing: border-box;
+}
+
+#about_text {
+  width: 406px;
+  height: 370px;
+  margin-right: auto;
+  margin-left: auto;
+  color: #000;
+  text-align: left;
+  font-weight: 600;
+}
+
+#about_text > h1 {
+  margin: 0;
+  font-size: 55px;
+  line-height: 67px;
+}
+
+#about_text > p {
+  margin: 0;
+  display: inline-block;
+}
+
+#a-chicago {
+  padding-bottom: 50px;
+  font-size: 26px;
+  line-height: 31px;
+}
+
+#about-intro {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+#about_pics {
+  width: 452px;
+  height: 422px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 640px) {
+  #about_pics {
+    width: 316px;
+    height: 295px;
+    margin-bottom: 120px;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  #about_pics {
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 368px) {
+  #about {
+    padding-right: 5vw;
+    padding-left: 5vw;
+  }
+}
