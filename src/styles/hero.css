@@ -50,6 +50,11 @@
   border: none;
 }
 
+#hero_intro > button > a, #hero_intro > button > Link {
+  color: #111;
+  text-decoration: none;
+}
+
 #hero_img {
   height: 410px;
   width: 340px;

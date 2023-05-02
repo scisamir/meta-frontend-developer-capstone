@@ -16,7 +16,7 @@ ul > li {
   list-style-type: none;
 }
 
-ul > li > a {
+ul > li > a, ul > li > Link {
   text-decoration: none;
   font-weight: 600;
   font-size: 18px;
@@ -86,7 +86,7 @@ ul > li > a {
     display: flex;
     flex-direction: column;
     height: 75vh;
-    width: 35vw;
+    width: 45vw;
     display: block;
     position: fixed;
     top: 0;
@@ -111,6 +111,12 @@ ul > li > a {
     margin-top: 35px;
     font-weight: 900;
     color: #333;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #md-nav {
+    width: 55vw;
   }
 }
 

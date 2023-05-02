@@ -31,6 +31,11 @@ footer > p {
   margin-left: auto;
 }
 
+#doormat > p > a, #doormat > p > Link {
+  color: #000;
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 368px) {
   #footer {
     padding-right: 5vw;

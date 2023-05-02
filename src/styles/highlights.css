@@ -28,6 +28,11 @@
   border: none;
 }
 
+#hintro > button > a, #hintro > button > Link {
+  color: #111;
+  text-decoration: none;
+}
+
 #wsp_dishes {
   display: flex;
   justify-content: space-between;

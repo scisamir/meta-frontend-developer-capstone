@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../../styles/highlights.css'
 import wsp1 from '../../assets/wsp1.png'
 import wsp2 from '../../assets/wsp2.png'
@@ -9,7 +10,7 @@ export default function Highlights() {
         <section id='highlights'>
           <div id='hintro'>
             <h3>This weeks specials!</h3>
-            <button>Online Menu</button>
+            <button><Link to="/bookings">Online Menu</Link></button>
           </div>
 
           <div id="wsp_dishes">
