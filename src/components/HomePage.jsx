@@ -6,11 +6,11 @@ import About from './homepage/About';
 
 export default function HomePage() {
   return (
-    <>
+    <main>
       <Hero />
       <Highlights />
       <Testimonials />
       <About />
-    </>
+    </main>
   )
 }

@@ -1,0 +1,45 @@
+#bookingPage {
+  border-top: 5px solid #495E57;
+  text-align: center;
+}
+
+form {
+  margin: 30px auto 50px auto;
+}
+
+form > label {
+  margin-top: 18px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #111;
+}
+
+form > select, form > input[type=number], form > input[type=date] {
+  border-radius: 16px;
+  width: 160px;
+  height: 40px;
+  padding: 5px auto 5px auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+form > span {
+  color: #CC5500;
+}
+
+form > input[type=submit] {
+  border-radius: 16px;
+  color: #111;
+  font-size: 20px;
+  line-height: 24px;
+  background: #F4CE14;
+  border: none;
+  padding: 20px 0px;
+  margin-top: 15px;
+}
+
+form > input[type=submit]:disabled {
+  color: #9f9f9f;
+  background: #777777;
+  cursor: not-allowed;
+}

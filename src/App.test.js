@@ -1,8 +1,17 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen, fireEvent } from '@testing-library/react';
+import BookingForm from './components/bookings/BookingForm';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test('Renders the BookingForm button', () => {
+  render(<BookingForm />);
+  const makeReservation = screen.getByText("Make Your Reservation");
+  expect(makeReservation).toBeInTheDocument();
+});
+
+test('Date and Time input works correctly', () => {
+  render(<BookingForm />);
+  const date = screen.getByLabelText(/Choose date/);
+  fireEvent.change(date, { target: { value: "2023-04-03" } });
+  const time = screen.getByLabelText(/Choose time/);
+  fireEvent.change(time, { target: { value: "17:00" } });
+  expect(time.value).toEqual("17:00");
 });

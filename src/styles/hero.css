@@ -40,14 +40,14 @@
 }
 
 #hero_intro > button {
-  height: 62px;
-  width: 207px;
   border-radius: 16px;
   color: #111;
   font-size: 20px;
   line-height: 24px;
   background: #F4CE14;
   border: none;
+  height: 62px;
+  width: 207px;
 }
 
 #hero_intro > button > a, #hero_intro > button > Link {
