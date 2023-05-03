@@ -5,6 +5,27 @@ import wsp1 from '../../assets/wsp1.png'
 import wsp2 from '../../assets/wsp2.png'
 import wsp3 from '../../assets/wsp3.png'
 
+const highlights = [
+  {
+    imgSrc: wsp1,
+    imgAlt: "Week's special Image 1",
+    dishName: "Greek salad",
+    dishPrice: "10.99",
+  },
+  {
+    imgSrc: wsp2,
+    imgAlt: "Week's special Image 2",
+    dishName: "Bruchetta",
+    dishPrice: "5.99",
+  },
+  {
+    imgSrc: wsp3,
+    imgAlt: "Week's special Image 3",
+    dishName: "Lemon Dessert",
+    dishPrice: "5.00",
+  },
+];
+
 export default function Highlights() {
   return (
         <section id='highlights'>
@@ -14,44 +35,20 @@ export default function Highlights() {
           </div>
 
           <div id="wsp_dishes">
-            <div className='dishes'>
-              <img src={wsp1} alt="Week's special Image 1" />
-              <div className='dish-names'>
-                <p>Greek salad</p>
-                <span>$ 10.99</span>
+            {highlights && highlights.map(highlight => (
+              <div key={highlight.dishName} className='dishes'>
+                <img src={highlight.imgSrc} alt={highlight.imgAlt} />
+                <div className='dish-names'>
+                  <p>{highlight.dishName}</p>
+                  <span>$ {highlight.dishPrice}</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, illum vituperata id mea, eius phaedrum eu duo. Te maiorum gloriatur sea.</p>
+                <div className='order'>
+                  <p>Order a delivery</p>
+                  <span>&</span>
+                </div>
               </div>
-              <p>Lorem ipsum dolor sit amet, illum vituperata id mea, eius phaedrum eu duo. Te maiorum gloriatur sea.</p>
-              <div className='order'>
-                <p>Order a delivery</p>
-                <span>&</span>
-              </div>
-            </div>
-
-            <div className='dishes'>
-              <img src={wsp2} alt="Week's special Image 2" />
-              <div className='dish-names'>
-                <p>Bruchetta</p>
-                <span>$ 5.99</span>
-              </div>
-              <p>Lorem ipsum dolor sit amet, illum vituperata id mea, eius phaedrum eu duo. Te maiorum gloriatur sea.</p>
-              <div className='order'>
-                <p>Order a delivery</p>
-                <span>&</span>
-              </div>
-            </div>
-
-            <div className='dishes'>
-              <img src={wsp3} alt="Week's special Image 3" />
-              <div className='dish-names'>
-                <p>Lemon Dessert</p>
-                <span>$ 5.00</span>
-              </div>
-              <p>Lorem ipsum dolor sit amet, illum vituperata id mea, eius phaedrum eu duo. Te maiorum gloriatur sea.</p>
-              <div className='order'>
-                <p>Order a delivery</p>
-                <span>&</span>
-              </div>
-            </div>
+            ))}
           </div>
         </section>
   )
