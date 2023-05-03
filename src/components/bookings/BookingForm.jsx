@@ -10,9 +10,9 @@ export default function BookingForm({ state, dispatch }) {
   const formik = useFormik({
     initialValues: {
       resDate: "",
-      resTime: "17:00",
+      resTime: "",
       guests: "",
-      occasion: "Birthday",
+      occasion: "",
     },
 
     onSubmit: () => {
@@ -40,7 +40,8 @@ export default function BookingForm({ state, dispatch }) {
         {(formik.errors.resDate && formik.touched.resDate) && <span className='errorMs'>{formik.errors.resDate}</span>}
         <label htmlFor="res-time">Choose time</label>
         <select id="res-time" {...formik.getFieldProps("resTime")}>
-            {state && state.map(time => (<option>{time}</option>))}
+            <option></option>
+            {state && state.map(time => (<option key={time}>{time}</option>))}
         </select>
         {(formik.errors.resTime && formik.touched.resTime) && <span className='errorMs'>{formik.errors.resTime}</span>}
         <label htmlFor="guests">Number of guests</label>
@@ -48,6 +49,7 @@ export default function BookingForm({ state, dispatch }) {
         {(formik.errors.guests && formik.touched.guests) && <span className='errorMs'>{formik.errors.guests}</span>}
         <label htmlFor="occasion">Occasion</label>
         <select id="occasion" {...formik.getFieldProps("occasion")}>
+            <option></option>
             <option>Birthday</option>
             <option>Anniversary</option>
         </select>
