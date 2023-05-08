@@ -6,6 +6,7 @@ import BookingsPage from './components/BookingsPage';
 import ConfirmedBooking from './components/confirmedBooking';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import ScrollToTopBtn from './components/ScrollToTopBtn';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         </Routes>
       </ScrollToTop>
       <Footer />
+      <ScrollToTopBtn />
     </>
   );
 }
