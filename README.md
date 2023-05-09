@@ -2,7 +2,7 @@
 
 This is the Capstone Project of[ Meta Front-End Developer](https://www.coursera.org/professional-certificates/meta-front-end-developer) Course on Coursera.
 
-![Meta Front-End Developer Certificate.](https://drive.google.com/file/d/15n6WsH2fdtOumdt-MIob80y6-wOjUb2g/view?usp=share_link)
+![Meta Front-End Developer Certificate.](https://drive.google.com/uc?id=15n6WsH2fdtOumdt-MIob80y6-wOjUb2g)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
