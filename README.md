@@ -6,6 +6,8 @@ This is the Capstone Project of[ Meta Front-End Developer](https://www.coursera.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Live URL: https://scisamir-little-lemon.vercel.app/
+
 
 ## Available Scripts
 
